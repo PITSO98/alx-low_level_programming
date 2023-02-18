@@ -6,21 +6,16 @@
  */
 int main(void)
 {
+	char letter;
 
-int lw = 'a';
-int up = 'A';
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
 
-while (lw <= 'z')
+	for (letter = 'A'; letter <= 'Z'; letter++)
+		putchar(letter);
 
-{
-putchar(lw);
-lw += 1;
-}
-while (up <= 'Z')
-{
-putchar(up);
-up += 1;
-}
-putchar('\n');
-return (0);
+	putchar('\n');
+
+	return (0);
+
 }
